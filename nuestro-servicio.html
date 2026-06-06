@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10974720556"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-10974720556');
+    </script>
+    <!-- Event snippet for Whatsapp conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-10974720556/N5flCKPezo4ZEKzkk_Eo',
+            'event_callback': callback
+        });
+        return false; 
+      }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Servicio</title>
+    <link rel="stylesheet" href="css/others.css">
+    <link rel="shortcut icon" href="img/logo 18x18c.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <script src="js/al.js"></script>
+</head>
+<body>
+  <header class="ns">
+    <nav>
+      <ul class='nav-bar'>
+          <li class='logo'><a href='index.html'><img src='img/alessa-nombre grande.png'/></a></li>
+          <input type='checkbox' id='check' />
+          <span class="menu-ns">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nuestro-servicio.html">Nuestro Servicio</a></li>
+              <li><a href="online.html">Servicio Online</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+              <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+          </span>
+          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+  </nav>
+    <div class="wave" style="height: 300px; overflow: hidden;" ><svg viewBox="0 0 500 110" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C187.63,125.83 301.63,48.86 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#f2f2f2;"></path></svg>
+    </div>
+    <section class="texto-ns">
+      <h1>NUESTRO SERVICIO</h1>
+    </section>
+  </header>
+  <main>
+    <button id="btnArriba" class="fadeIn" onclick="volverArriba()">
+      <img src="img/volver 2.png" alt="">
+    </button>
+    <button id="btnSeguimiento" class="fadeIn">
+      <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0" onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
+          <img src="img/Whats logo.png" alt="">
+      </a>
+  </button>
+    <!-- MEJORAR LA BOX Y HACERLO BONITO -->
+    <section class="serv">
+      <div class="proceso">
+          <h1>
+          Participa en tu proceso psicoterapéutico <br>
+          de forma activa e informada
+          </h1>        
+      </div>
+      <div class="caja">
+        <p>Servicios disponibles:</p>
+      </div>
+
+    </section>
+    <section class="servicios">
+      <div class="contenedor">
+        <div class="galeria-port-ns">
+          <div class="servicio">
+            <h3 class="nombre-servicio">Terapia de pareja</h3>
+            <div class="imagen-port-ns" onclick="mostrarModal('modalPareja')">
+              <img src="img/imgtest/pare500.jpg" alt="">
+                <div class="hover-galeria-ns">
+                  <img src="/img/conoceme white.png" alt="">
+                  <p>Conoce más</p>
+                </div>
+            </div>
+          </div>
+          <div class="servicio">
+            <h3 class="nombre-servicio">Terapia individual</h3>
+            <div class="imagen-port-ns" onclick="mostrarModal('modalIndi')">
+              <img src="img/imgtest/indi500.jpg" alt="">
+              <div class="hover-galeria-ns">
+                <img src="/img/conoceme white.png" alt="">
+                <p>Conoce más</p>
+              </div>
+            </div>
+          </div>
+          <div class="servicio">
+            <h3 class="nombre-servicio">Terapia infantil</h3>
+            <div class="imagen-port-ns" onclick="mostrarModal('modalInfant')">
+              <img src="img/imgtest/infa500.jpg" alt="">
+              <div class="hover-galeria-ns">
+                <img src="/img/conoceme white.png" alt=""> 
+                <p>Conoce más</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CUADRO QUE APARECE AL HACER CLICK EN IMÁGENES -->
+      <div class="modal" id="modalPareja">
+        <div class="modal-contenido">
+          <span class="cerrar-modal" onclick="cerrarModal('modalPareja')">&times;</span>
+          <h2>Terapia de pareja</h2>
+          <p>Logramos que tanto tú como tu pareja comprendan y solucionen su problemática, mediante la adquisición de habilidades conductuales que favorezcan la comunicación y fortalezcan su relación.
+          </p>
+          <div class="col-par">
+            <ul class="f-par">
+              <li>Infidelidad</li>
+              <li>Celos</li>
+              <li>Inseguridades</li>
+              <li>Problemas sexuales</li>
+              <li>Comunicación</li>
+              <li>Dependencia y/o codependencia emocional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modalIndi">
+        <div class="modal-contenido">
+          <span class="cerrar-modal" onclick="cerrarModal('modalIndi')">&times;</span>
+          <h2>Terapia Individual</h2>
+          <p>A lo largo de las sesiones logramos que adquieras herramientas y habilidades para comprender y solucionar las problemáticas que limitan tu desarrollo personal.
+          </p>
+          <div class="col-par">
+            <ul class="f-par">
+              <li>Ansiedad</li>
+              <li>Depresión</li>
+              <li>Fobias</li>
+              <li>Trastorno límite de la personalidad</li>
+              <li>Trastorno obsesivo compulsivo</li>
+              <li>Problemas de ira</li>
+              <li>Baja Autoestima</li>
+              <li>Adicciones</li>
+              <li>Celos</li>
+              <li>Inseguridad</li>
+              <li>Trastornos Alimenticios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modalInfant">
+        <div class="modal-contenido">
+          <span class="cerrar-modal" onclick="cerrarModal('modalInfant')">&times;</span>
+          <h2>Terapia Infantil</h2>
+          <p>Los tutores logran comprender los factores que desencadenan el comportamiento del menor, con el objetivo de poder modificarlo.
+          </p>
+          <div class="col-par">
+            <ul class="f-par">
+              <li>Berrinches</li>
+              <li>Problemas escolares</li>
+              <li>Trastorno por Déficit de Atención e Hiperactividad </li>
+              <li>Problemas de conducta</li>
+              <li>Dificultad para dormir</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- PASOS MÀS CERCA -->
+
+    <section class="contepasos">
+      <div>
+        <h2 class="titulo-pasos">Pasos del Proceso</h2>
+      </div>
+      <div class="paso" id="paso1">
+        <h2>Evaluación</h2>
+        <p>Comunicamos sesión a sesión la información recabada y cómo se relaciona con tu situación problema.</p>
+      </div>
+      <div class="paso" id="paso2">
+        <h2>Análisis</h2>
+        <p>Identificamos las condiciones que están manteniendo tu situación actual.</p>
+      </div>
+      <div class="paso" id="paso3">
+        <h2>Intervención</h2>
+        <p>Implementamos un plan de trabajo orientado al establecimiento de una solución efectiva.</p>
+      </div>
+      <div class="paso" id="paso4">
+        <h2>Seguimiento</h2>
+        <p>Nos aseguramos de que los cambios favorables continúen presentes.</p>
+      </div>        
+      <div class="boton-ns">
+        <a href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión" target="_blank" onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
+        <button class="submitbutton-ns"><p>¡Agenda tu sesión aquí!</p></button>
+        </a>
+      </div>
+    </section>
+    <footer class="nsfoot">
+      <div class="contenedor-footer">
+        <div class="content-foo">
+          <h4>Contacto</h4>
+          <p class="+5256140438">+525636140438</p>
+        </div>
+        <div class="content-foo">
+          <h4>Email</h4>
+          <a href="mailto:centroalessa@gmail.com" target="_blank">
+              <p>centroalessa@gmail.com</p>
+          </a>
+        </div>
+        <div class="content-foo">
+          <h4>Ubicación</h4>
+          <p>Calle Tabasco 56, CDMX<br>
+          Col. Roma Norte.</p>
+        </div>
+      </div>
+      <div class="content-foo">
+        <div class="tyc">
+            <a href="legales/tyc.html">
+                <h4>Términos y Condiciones </h4>
+            </a>
+        </div>
+        <div class="ap">
+            <a href="legales/aviso.html">
+                <h4>Aviso de Privacidad</h4>
+            </a>
+        </div>
+      </div>
+      <div class="titulo-final"> 
+        <h3> &copy; Centro de Atención Psicológica: Alessa</h3>
+      </div>
+    </footer>    
+  </main>
+
+</body>
+</html>
