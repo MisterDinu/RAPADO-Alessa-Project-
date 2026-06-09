@@ -6,8 +6,8 @@
 
 :root {
     /* Paleta de Colores Alessa */
-    --color-primario: #2698b4;    /* Azul Alessa (anterior rgba 38, 152, 180) */
-    --color-secundario: #3168a7;  /* Azul oscuro (del nav) */
+    --color-primario: #1e6274;    /* Azul Alessa (anterior rgba 38, 152, 180) */
+    --color-secundario: #154c8a;  /* Azul oscuro (del nav) */
     --color-acento: #7067bb;      /* Morado suave (botones) */
     --color-texto-dark: #333333;
     --color-texto-light: #616161;
@@ -44,10 +44,10 @@ body {
 
 .titulo {
     color: var(--color-primario);
-    font-size: 30px;
+    font-size: 55px;
     text-align: center;
     margin-bottom: 60px;
-    font-weight: 300; /* Normalizado de 228/315 */
+    font-weight: 400;
 }
 
 a {

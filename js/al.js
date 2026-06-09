@@ -138,4 +138,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// NAV — toggle mobile + dropdown
+document.addEventListener('DOMContentLoaded', () => {
+    // Hamburger
+    const toggle = document.getElementById('nav-toggle');
+    const menu   = document.getElementById('nav-menu');
 
+    if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+            const isOpen = menu.classList.toggle('nav__menu--open');
+            toggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('nav__menu--open');
+                toggle.setAttribute('aria-expanded', false);
+            });
+        });
+    }
+
+    // Dropdown toggle en mobile (tap en "Servicios")
+    const dropdownToggle = document.querySelector('.nav__dropdown-toggle');
+    if (dropdownToggle) {
+        dropdownToggle.addEventListener('click', () => {
+            const expanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
+            dropdownToggle.setAttribute('aria-expanded', !expanded);
+        });
+    }
+});
