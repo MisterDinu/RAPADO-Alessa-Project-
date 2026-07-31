@@ -33,15 +33,15 @@
 /* Variantes por página */
 .head-servicio--individual {
     background:
-        linear-gradient(rgba(43, 100, 180, 0.55), rgba(20, 50, 130, 0.50)),
-        url("../img/Terapia individual.jpg");
+        linear-gradient(rgba(61, 107, 173, 0.642), rgba(20, 49, 130, 0.293)),
+        url("../img/Terapia individual.jpeg");
     background-size: cover;
     background-position: center 35%;
 }
 
 .head-servicio--online {
     background:
-        linear-gradient(rgba(43, 146, 211, 0.533), rgba(31, 63, 178, 0.479)),
+        linear-gradient(rgba(135, 131, 183, 0.358), rgba(152, 141, 192, 0.46)),
         url("../img/Terapia online.jpg");
     background-size: cover;
     background-position: center 35%;
@@ -49,16 +49,16 @@
 
 .head-servicio--pareja {
     background:
-        linear-gradient(rgba(43, 100, 180, 0.55), rgba(20, 50, 130, 0.50)),
-        url("../img/Terapia pareja.jpg");
+        linear-gradient(rgba(112, 88, 160, 0.82), rgba(112, 88, 160, 0.65)),
+        url("../img/pareja-hero.jpg");
     background-size: cover;
     background-position: center 35%;
 }
 
 .head-servicio--infantil {
     background:
-        linear-gradient(rgba(43, 100, 180, 0.55), rgba(20, 50, 130, 0.50)),
-        url("../img/Terapia infantil.jpg");
+        linear-gradient(rgba(0, 144, 168, 0.82), rgba(0, 144, 168, 0.65)),
+        url("../img/infantil-hero.jpg");
     background-size: cover;
     background-position: center 35%;
 }
@@ -512,13 +512,6 @@
     text-transform: uppercase;
 }
 
-.process-step h3 {
-    font-size: 1.05rem;
-    color: var(--color-secundario);
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
 .process-step p {
     font-size: 0.95rem;
     color: var(--color-texto-light);
@@ -599,7 +592,7 @@
 }
 
 .service-topics__note::before {
-    content: '◎';
+    content: '*';
     color: var(--color-secundario);
     font-size: 0.8rem;
 }
