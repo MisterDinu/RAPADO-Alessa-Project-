@@ -41,7 +41,7 @@
 
 .head-servicio--online {
     background:
-        linear-gradient(rgba(135, 131, 183, 0.358), rgba(152, 141, 192, 0.46)),
+        linear-gradient(rgba(41, 31, 131, 0.4), rgba(166, 143, 250, 0.068)),
         url("../img/Terapia online.jpg");
     background-size: cover;
     background-position: center 35%;
