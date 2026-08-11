@@ -86,7 +86,7 @@
         </div>
     </header>
 
-    <main class="main--infantil">
+    <main>
         <button id="btnPsic" class="fadeIn">
             <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+información+sobre+terapia+infantil&type=phone_number&app_absent=0"
                onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20información%20sobre%20terapia%20infantil')">
@@ -247,19 +247,24 @@
         </section>
 
         <!-- ==== CTA FINAL ==== -->
-        <section class="cta cta--infantil" aria-labelledby="cta-infantil-title">
-            <h2 id="cta-infantil-title">Atender a tiempo hace la diferencia.</h2>
-            <p class="cta-text">Agenda una primera sesión de evaluación y definimos juntos el mejor camino para tu hijo o hija.</p>
-
-            <div class="boton-on boton-on--dual boton-on--center">
-                <a href="https://www.doctoralia.com.mx/clinicas/centro-de-atencion-psicologica-alessa"
-                target="_blank" rel="nofollow noopener noreferrer">
-                    <button class="submit-on">Agendar en Doctoralia</button>
-                </a>
-                <a href="https://wa.me/525636140438?text=Hola,%20me%20gustaría%20información%20sobre%20terapia%20infantil"
-                onclick="gtag_report_conversion('https://wa.me/525636140438')">
-                    <button class="submit-on submit-on--secondary">Hablar por WhatsApp</button>
-                </a>
+        <section class="service-cta" aria-labelledby="cta-infantil-title">
+            <div class="service-cta__inner">
+                <div class="service-cta__text">
+                    <h2 id="cta-infantil-title">Atender a tiempo hace la diferencia.</h2>
+                    <p>Agenda una primera sesión de evaluación y definimos juntos el mejor camino para tu hijo o hija.</p>
+                </div>
+                <div class="service-cta__actions">
+                    <a href="https://www.doctoralia.com.mx/clinicas/centro-de-atencion-psicologica-alessa"
+                    target="_blank" rel="nofollow noopener noreferrer">
+                    <button class="cta-btn--primary">Agendar en Doctoralia</button>
+                    </a>
+                    <a href="https://wa.me/525636140438?text=Hola,%20me%20gustaría%20información%20sobre%20terapia%20infantil"
+                    onclick="gtag_report_conversion('https://wa.me/525636140438')">
+                    <button class="cta-btn--secondary">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Hablar por WhatsApp
+                    </button>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
