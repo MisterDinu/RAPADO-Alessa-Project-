@@ -4,9 +4,9 @@
     DESCRIPCIÓN: Navegación, Footer y elementos persistentes (botones flotantes).
 */
 
-/* ====
+/* ============================================
    NAV — global
-   ==== */
+   ============================================ */
 
 .nav {
     display: flex;
@@ -39,11 +39,10 @@
 .nav__link {
     display: block;
     padding: 8px 14px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
-    color: #ffff;
+    color: #ffffff;
     text-decoration: none;
-    font-family: var(--font-main);
     border-radius: 6px;
     background: none;
     border: none;
@@ -60,10 +59,10 @@
 .nav__cta {
     display: inline-block;
     padding: 8px 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--color-primario);
-    background: #ffff;
+    background: #ffffff;
     border-radius: 50px;
     text-decoration: none;
     transition: opacity 0.18s, transform 0.15s;
@@ -91,13 +90,15 @@
     transform: rotate(180deg);
 }
 
+
 .nav__dropdown {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 100%;        /* sin gap */
     left: 0;
+    padding-top: 8px; /* el espacio ahora está DENTRO del dropdown, no fuera */
     min-width: 200px;
-    background: #ffff;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     padding: 8px 0;
@@ -129,7 +130,7 @@
     display: none;
     background: none;
     border: none;
-    color: #ffff;
+    color: #ffffff;
     font-size: 22px;
     cursor: pointer;
     padding: 8px;
@@ -151,58 +152,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.20);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
     transition: transform 0.25s, box-shadow 0.25s;
-    padding: 0;
     overflow: hidden;
-    background: transparent;
+    padding: 0;
 }
 
-#btnArriba {
-    bottom: 24px;
-    right: 24px;
-    background-color: #ffffff;
-    border: 1px solid rgba(30, 98, 116, 0.15);
-}
+#btnArriba { bottom: 20px; right: 30px; background-color: #ffffff; }
+#btnSeguimiento { bottom: 88px; right: 30px; background-color: #25D366; }
 
-#btnSeguimiento, #btnPsic {
-    bottom: 92px;
-    right: 24px;
-    background-color: transparent;
-}
-
-#btnArriba img,
-#btnSeguimiento img,
-#btnPsic img {
-    width: 56px;
-    height: 56px;
-    object-fit: cover;
+#btnArriba img, #btnSeguimiento img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
     display: block;
-    border-radius: 50%;
 }
 
-/* El PNG de "volver" tiene su propio círculo azul marino,
-   así que lo mostramos al 80% para que respire dentro del botón blanco */
-#btnArriba img {
-    width: 44px;
-    height: 44px;
-}
-
-#btnArriba:hover, #btnSeguimiento:hover, #btnPsic:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
-@media (max-width: 480px) {
-    #btnArriba, #btnSeguimiento, #btnPsic {
-        width: 50px;
-        height: 50px;
-        right: 16px;
-    }
-    #btnArriba img { width: 38px; height: 38px; }
-    #btnSeguimiento img, #btnPsic img { width: 50px; height: 50px; }
-    #btnSeguimiento, #btnPsic { bottom: 78px; }
-    #btnArriba { bottom: 16px; }
+#btnArriba:hover, #btnSeguimiento:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.22);
 }
 
 /* --- FOOTER --- */
@@ -226,34 +194,21 @@ footer {
 }
 
 .content-foo h4 {
-    font-size: 16px;
     color: var(--color-texto-dark);
     border-bottom: 3px solid var(--color-primario);
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.content-foo p,
-.content-foo a p {
-    font-size: 15px;
+.content-foo p {
     color: var(--color-texto-light);
-}
-
-.content-foo a {
-    text-decoration: none;
 }
 
 .titulo-final {
     text-align: center;
     color: #9e9797;
     margin-top: 20px;
-    font-size: 15px;
-}
-
-.titulo-final h3 {
-    font-size: 15px;
-    font-weight: 400;
-    color: #9e9797;
+    font-size: 18px;
 }
 
 .footer-legal {
@@ -266,7 +221,7 @@ footer {
 
 .footer-legal a {
     color: #9e9797;
-    font-size: 14px;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -274,6 +229,7 @@ footer {
     text-decoration: underline;
 }
 
+/* Separador delgado entre los dos links */
 .footer-legal a + a {
     padding-left: 1.5rem;
     border-left: 1px solid #ccc;
@@ -289,9 +245,9 @@ footer {
     }
 }
 
-/* ====
+/* ============================================
    NAV — MOBILE
-   ==== */
+   ============================================ */
 
 @media (max-width: 768px) {
     .nav {
@@ -336,7 +292,7 @@ footer {
     }
 
     .nav__cta {
-        color: #ffff;
+        color: #ffffff;
         background: var(--color-primario);
         padding: 10px 20px;
         display: inline-block;
@@ -360,7 +316,7 @@ footer {
 
     .nav__dropdown-link:hover {
         background: rgba(255,255,255,0.1);
-        color: #ffff;
+        color: #ffffff;
     }
 
     .nav__chevron {
