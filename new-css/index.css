@@ -270,7 +270,7 @@ header {
 }
 
 /* ====
-   COSTOS — Opción A: tarjetas comparativas
+   COSTOS — Opción D: precios + franja de confianza
    ==== */
 
 #costos {
@@ -290,23 +290,25 @@ header {
     color: var(--color-texto-light);
     margin-bottom: 40px;
     font-size: 16px;
+    line-height: 1.6;
 }
 
 .costos-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 32px;
-    flex-wrap: wrap;
 }
 
 .costo-card {
-    background: #ffffff;
-    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
     padding: 32px 28px;
-    width: 320px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    border-top: 5px solid var(--color-primario);
     text-align: left;
+    background: #ffff;
+    border-top: 5px solid var(--color-primario);
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .costo-card--pareja {
@@ -314,19 +316,19 @@ header {
 }
 
 .costo-card__titulo {
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--color-texto-dark);
     margin-bottom: 20px;
+    color: var(--color-texto-dark);
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .costo-linea {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
-    padding: 14px 0;
-    border-bottom: 1px solid #eee;
+    justify-content: space-between;
     gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .costo-linea:last-of-type {
@@ -334,15 +336,15 @@ header {
 }
 
 .costo-linea__label {
-    font-size: 14px;
     color: var(--color-texto-light);
+    font-size: 14px;
     line-height: 1.4;
 }
 
 .costo-linea__precio {
+    color: var(--color-primario);
     font-size: 20px;
     font-weight: 600;
-    color: var(--color-primario);
     white-space: nowrap;
 }
 
@@ -352,35 +354,35 @@ header {
 
 .costo-badge {
     display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    color: #ffffff;
-    background: #4caf50;
-    border-radius: 20px;
     padding: 2px 8px;
     margin-top: 4px;
     vertical-align: middle;
+    color: #ffff;
+    background: #4caf50;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .costo-card__cta {
     display: block;
-    text-align: center;
-    margin-top: 22px;
-    padding: 10px 24px;
+    margin-top: auto;
+    padding: 11px 20px;
+    color: #ffff;
+    background-color: var(--color-primario);
+    border: 2px solid transparent;
     border-radius: 50px;
     font-size: 14px;
     font-weight: 500;
+    text-align: center;
     text-decoration: none;
     transition: opacity 0.2s, transform 0.15s;
-    background-color: var(--color-primario);
-    color: #ffff;
-    border: 2px solid transparent;
 }
 
 .costo-card--pareja .costo-card__cta {
-    background-color: transparent;
-    color: rgba(112, 88, 160, 1);
-    border-color: rgba(112, 88, 160, 1);
+    color: #ffff;
+    background-color: rgba(112, 88, 160, 1);
+    border-color: transparent;
 }
 
 .costo-card__cta:hover {
@@ -388,10 +390,52 @@ header {
     transform: translateY(-1px);
 }
 
-.doctoralia-agenda {
+.costos-confianza {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 40px;
+    padding: 35px 40px;
+    text-align: left;
+    background: rgba(0, 144, 168, 0.05); /* Tono suave marca */
+    border: 1px solid rgba(0, 144, 168, 0.15);
+    border-radius: 20px;
+    min-height: 150px; /* Forzamos altura mínima */
+    overflow: visible; 
+}
+
+.costos-confianza__widget {
+    flex: 1;
     display: flex;
     justify-content: center;
-    padding-top: 32px;
+    align-items: center;
+    min-width: 300px;
+}
+
+/* Forzamos que cualquier iframe inyectado por Doctoralia sea visible */
+.costos-confianza__widget iframe {
+    min-height: 100px !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.costos-confianza__copy {
+    max-width: 420px;
+}
+
+.costos-confianza__copy h3 {
+    margin-bottom: 8px;
+    color: var(--color-texto-dark);
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.costos-confianza__copy p {
+    color: var(--color-texto-light);
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 /* ====
@@ -403,9 +447,23 @@ header {
     padding: 60px 0;
 }
 
+.equipo .contenedor {
+    max-width: 1100px;
+    overflow: visible;
+}
+
+.equipo-intro {
+    max-width: 1000px;
+    margin: -20px auto 40px;
+    text-align: center;
+    color: var(--color-texto-light);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
 .galeria-port {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
     justify-content: center;
     gap: 35px;
 }
@@ -416,10 +474,24 @@ header {
     align-items: center;
 }
 
-/* Opción A: contenedor vertical con overlay degradado */
+/* César (1er psicólogo) — cortado por la izquierda → mover encuadre a la izquierda */
+.galeria-port .psicologo:nth-child(1) .imagen-port img {
+    object-position: left center;
+}
+
+/* Victor (4to psicólogo) — cortado por la derecha → mover encuadre a la derecha */
+.galeria-port .psicologo:nth-child(4) .imagen-port img {
+    object-position: right center;
+}
+
+.imagen-port-link {
+    display: block;
+    text-decoration: none;
+}
+
 .imagen-port {
-    width: 220px;
-    height: 300px;
+    width: 240px;
+    height: 340px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -431,11 +503,12 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center;
+    object-position: center center;  /* cambia top center → center center */
     display: block;
     transition: transform 0.35s ease;
 }
 
+.imagen-port-link:hover .imagen-port img,
 .imagen-port:hover img {
     transform: scale(1.04);
 }
@@ -445,36 +518,65 @@ header {
     inset: 0;
     background: linear-gradient(
         to top,
-        rgba(30, 98, 116, 0.90) 0%,
-        rgba(30, 98, 116, 0.0) 55%
+        rgba(30, 60, 90, 0.92) 0%,
+        rgba(30, 60, 90, 0.096) 90%
     );
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 0 14px 20px;
+    text-align: center;
     opacity: 0;
-    transform: translateY(8px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(6px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    width: 100%;
+    height: 100%;
 }
 
+
+.imagen-port-link:hover .hover-galeria,
 .imagen-port:hover .hover-galeria {
     opacity: 1;
     transform: translateY(0);
 }
 
-.hover-galeria img {
-    width: 28px;
-    margin-bottom: 6px;
-    filter: brightness(0) invert(1);
+.hover-galeria__areas {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.55;
+    margin: 0 0 8px;
+    letter-spacing: 0.01em;
 }
 
-.hover-galeria h3,
-.hover-galeria p {
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 300;
-    margin: 0;
+.hover-galeria__modalidad {
+    color: rgba(255,255,255,0.78);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hover-galeria__modalidad i {
+    font-size: 11px;
+}
+
+.hover-galeria__cta {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    padding-bottom: 1px;
+    transition: border-color 0.2s;
+}
+
+.imagen-port-link:hover .hover-galeria__cta {
+    border-color: #fff;
 }
 
 .nombre {
@@ -503,7 +605,7 @@ header {
     flex-wrap: wrap;
     margin-bottom: 32px;
     padding: 16px;
-    background: #ffffff;
+    background: #ffff;
     border-radius: 14px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
@@ -518,7 +620,7 @@ header {
     font-size: 18px;
     cursor: pointer;
     color: var(--color-primario);
-    background: #ffffff;
+    background: #ffff;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -532,7 +634,7 @@ header {
 
 .wrapper i:hover {
     background: var(--color-primario);
-    color: #ffffff;
+    color: #ffff;
 }
 
 .carrete {
@@ -555,7 +657,7 @@ header {
     flex-shrink: 0;
     border-radius: 14px;
     overflow: hidden;
-    background: #ffffff;
+    background: #ffff;
     box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
 
@@ -594,13 +696,18 @@ header {
     }
 
     .costos-grid {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
     }
 
-    .costo-card {
-        width: 100%;
-        max-width: 380px;
+    .costos-confianza {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .costos-confianza__copy {
+        max-width: 520px;
     }
 }
 
