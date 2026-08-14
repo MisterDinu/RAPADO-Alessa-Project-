@@ -1,33 +1,44 @@
-// Función para mostrar el botón cuando se desplaza
-window.onscroll = function() {
-        mostrarBoton();
-    };
+// BOTONES FLOTANTES — aparecen después de bajar 100px
 
-function mostrarBoton() {
-    var botonArriba = document.getElementById("btnArriba");
+document.addEventListener('DOMContentLoaded', function () {
+    var botonArriba = document.getElementById('btnArriba');
+    var botonWa = document.getElementById('btnSeguimiento');
+    var botonPsic = document.getElementById('btnPsic');
 
-// Se muestra el botón cuando el usuario ha bajado 100px
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        botonArriba.style.display = "block";
-    } else {
-        botonArriba.style.display = "none";
+    function mostrarBotones() {
+        var mostrar =
+            window.scrollY > 100 ||
+            document.documentElement.scrollTop > 100;
+
+        if (botonArriba) {
+            botonArriba.classList.toggle('btn-visible', mostrar);
+        }
+
+        if (botonWa) {
+            botonWa.classList.toggle('btn-visible', mostrar);
+        }
+
+        if (botonPsic) {
+            botonPsic.classList.toggle('btn-visible', mostrar);
+        }
     }
 
-    var botonWa = document.getElementById("btnSeguimiento");
+    window.addEventListener('scroll', mostrarBotones, {
+        passive: true
+    });
 
-// Se muestra el botón cuando el usuario ha bajado 100px
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        botonWa.style.display = "block";
-    } else {
-        botonWa.style.display = "none";
-    }
-}
+    // Establece correctamente el estado al cargar o recargar.
+    mostrarBotones();
+});
 
 
-// Función para ocultar el botón
+// FUNCIÓN PARA VOLVER ARRIBA
+
 function volverArriba() {
-    document.body.scrollTop = 0; // 
-    document.documentElement.scrollTop = 0;
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
 // PARA MOSTRAR Y CERRAR CARD PASOS

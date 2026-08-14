@@ -96,13 +96,15 @@
     </header>
 
     <main class="main--jaime">
-
-        <!-- Botón flotante WhatsApp -->
-        <button id="btnPsic" class="fadeIn">
+        <!-- Botones flotantes -->
+        <button id="btnSeguimiento" class="fadeIn">
             <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0"
-               onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
+            onclick="gtag_report_conversion('https://wa.me/525636140438')">
                 <img src="../img/Whats logo.png" alt="WhatsApp">
             </a>
+        </button>
+        <button id="btnArriba" class="fadeIn" onclick="volverArriba()">
+            <img src="../img/volver 2.png" alt="Volver arriba">
         </button>
 
         <!-- ==== HERO ==== -->
@@ -119,6 +121,7 @@
                     <span class="psic-chip">Individual</span>
                     <span class="psic-chip">Pareja</span>
                     <span class="psic-chip">Adolescentes</span>
+                    <span class="psic-chip">Presencial y En línea</span>
                     </div>
 
                     <p style="font-size:0.97rem; color:var(--color-texto-light); line-height:1.75; max-width:520px;">

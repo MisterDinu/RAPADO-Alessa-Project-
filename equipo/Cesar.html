@@ -96,13 +96,15 @@
     </header>
 
     <main class="main--cesar">
-
-        <!-- Botón flotante WhatsApp -->
-        <button id="btnPsic" class="fadeIn">
+        <!-- Botones flotantes -->
+        <button id="btnSeguimiento" class="fadeIn">
             <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0"
-               onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
+            onclick="gtag_report_conversion('https://wa.me/525636140438')">
                 <img src="../img/Whats logo.png" alt="WhatsApp">
             </a>
+        </button>
+        <button id="btnArriba" class="fadeIn" onclick="volverArriba()">
+            <img src="../img/volver 2.png" alt="Volver arriba">
         </button>
 
         <!-- ==== HERO ==== -->
@@ -113,17 +115,19 @@
 
                 <div class="psic-hero__info">
                     <h2 class="psic-hero__nombre">César Tapia</h2>
-                    <p class="psic-hero__cedula">Cédula profesional: 12536625</p>
+                    <p class="psic-hero__cedula">Cédula de licenciatura: 12536625</p>
+                    <p class="psic-hero__cedula">Cédula de maestría: 15666209</p>
 
                     <div class="psic-chips" aria-label="Modalidades de atención">
                         <span class="psic-chip">Individual</span>
                         <span class="psic-chip">Pareja</span>
                         <span class="psic-chip">Infantil</span>
                         <span class="psic-chip">Adolescentes</span>
+                        <span class="psic-chip">Presencial y En línea</span>
                     </div>
 
                     <p style="font-size:0.97rem; color:var(--color-texto-light); line-height:1.75; max-width:520px;">
-                        Psicólogo con formación en Terapia Cognitivo Conductual y Medicina Conductual. Más de 5 años de experiencia clínica, docencia e investigación en psicología.
+                        Psicólogo con formación en Terapia Cognitivo Conductual y maestria en Medicina Conductual. Más de 5 años de experiencia clínica, docencia e investigación en psicología.
                     </p>
 
                     <div class="psic-hero__cta">
@@ -157,6 +161,7 @@
                     <ul>
                         <li>Licenciatura en psicología: UNAM – FES Iztacala</li>
                         <li>Maestría en psicología con residencia en Medicina Conductual: UNAM – FES Iztacala</li>
+                        <li>Estudiante de Doctorado en Psicología y Salud en Facultad de Estudios Superiores Iztacala</li>
                     </ul>
                 </div>
 
@@ -180,6 +185,7 @@
                     <h3>Publicaciones</h3>
                     <ul>
                         <li><em>Fibromialgia: el papel del psicólogo</em> — Revista Electrónica de Psicología Iztacala</li>
+                        <li><em>La ciencia del comportamiento y el campo de la salud</em> — Revista Electrónica de Psicología Iztacala</li>
                         <li>Capítulos 5 y 7 de <em>Aplicaciones del análisis contingencial en diversos contextos</em></li>
                         <li><em>Comportamiento asociado a patología sin la presencia de enfermedad</em> — Revista Interacciones</li>
                     </ul>
