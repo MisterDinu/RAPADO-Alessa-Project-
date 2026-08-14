@@ -265,6 +265,42 @@
 /* ====
    4. BLOQUES INFORMATIVOS
    ==== */
+/* Título visible de sección — SEO friendly */
+.psic-bloques > .seccion-titulo {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 0 auto 2rem;
+    max-width: 1100px;
+    padding-left: 0.25rem;
+    position: relative;
+}
+
+.psic-bloques > .seccion-titulo::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    border-radius: 2px;
+    margin-right: 0.6em;
+    vertical-align: middle;
+    opacity: 0.4;
+}
+
+/* Color por psicólogo */
+.main--cesar .psic-bloques > .seccion-titulo { color: rgba(112, 88, 160, 1); }
+.main--cesar .psic-bloques > .seccion-titulo::before { background: rgba(112, 88, 160, 1); }
+
+.main--sarai .psic-bloques > .seccion-titulo { color: rgba(88, 112, 160, 1); }
+.main--sarai .psic-bloques > .seccion-titulo::before { background: rgba(88, 112, 160, 1); }
+
+.main--jaime .psic-bloques > .seccion-titulo { color: rgba(61, 108, 173, 1); }
+.main--jaime .psic-bloques > .seccion-titulo::before { background: rgba(61, 108, 173, 1); }
+
+.main--victor .psic-bloques > .seccion-titulo { color: rgba(100, 120, 170, 1); }
+.main--victor .psic-bloques > .seccion-titulo::before { background: rgba(141, 153, 192, 1); }
+
 
 .psic-bloques {
     background: #fff;
