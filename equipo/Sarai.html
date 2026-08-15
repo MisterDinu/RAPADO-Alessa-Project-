@@ -96,7 +96,6 @@
     </header>
 
     <main class="main--sarai">
-
         <!-- Botones flotantes -->
         <button id="btnSeguimiento" class="fadeIn">
             <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0"
@@ -112,37 +111,57 @@
         <section class="psic-hero">
             <div class="psic-hero__inner">
 
-                <img class="psic-hero__foto" src="../img/Sarai.jpg" alt="Sarai Camarillo, psicóloga en Centro Alessa">
+                <div class="psic-hero__presentacion">
+                    <h2 class="psic-hero__nombre psic-hero__nombre--top">Sarai Camarillo</h2>
 
-                <div class="psic-hero__info">
-                    <h2 class="psic-hero__nombre">Sarai Camarillo</h2>
-                    <p class="psic-hero__cedula">Cédula profesional: 14587365</p>
+                    <div class="psic-hero__foto-info">
+                        <img class="psic-hero__foto" src="../img/Sarai.jpg" alt="Sarai Camarillo, psicóloga en Centro Alessa">
 
-                    <div class="psic-chips" aria-label="Modalidades de atención">
-                    <span class="psic-chip">Individual</span>
-                    <span class="psic-chip">Infantil</span>
-                    <span class="psic-chip">Adolescentes</span>
-                    <span class="psic-chip">Presencial y En línea</span>
+                        <div class="psic-hero__info">
+                            <p class="psic-hero__cedula">Cédula profesional: 14587365</p>
+
+                            <div class="psic-chips" aria-label="Modalidades de atención">
+                                <span class="psic-chip">Individual</span>
+                                <span class="psic-chip">Infantil</span>
+                                <span class="psic-chip">Adolescentes</span>
+                                <span class="psic-chip">Presencial y En línea</span>
+                            </div>
+
+                            <p class="psic-hero__descripcion">
+                                Psicóloga con formación en Terapia Cognitivo Conductual. Más de 5 años de experiencia en atención psicológica individual, infantil y con adolescentes en contextos clínicos y comunitarios.
+                            </p>
+
+                            <div class="psic-hero__cta">
+                                <a class="psic-cta-btn psic-cta-btn--secondary"
+                                href="https://wa.me/525636140438?text=Hola,%20me%20gustaría%20agendar%20una%20sesión%20con%20Sarai"
+                                onclick="gtag_report_conversion('https://wa.me/525636140438')">
+                                <i class="fab fa-whatsapp" style="margin-right:6px;"></i> Hablar por WhatsApp
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <p style="font-size:0.97rem; color:var(--color-texto-light); line-height:1.75; max-width:520px;">
-                    Psicóloga con formación en Terapia Cognitivo Conductual. Más de 5 años de experiencia en atención psicológica individual, infantil y con adolescentes en contextos clínicos y comunitarios.
-                    </p>
-
-                    <div class="psic-hero__cta">
-                    <a class="psic-cta-btn psic-cta-btn--primary"
-                    href="https://www.doctoralia.com.mx/clinicas/centro-de-atencion-psicologica-alessa"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer">
-                    Agendar sesión en Doctoralia
-                    </a>
-                    <a class="psic-cta-btn psic-cta-btn--secondary"
-                    href="https://wa.me/525636140438?text=Hola,%20me%20gustaría%20agendar%20una%20sesión%20con%20Sarai"
-                    onclick="gtag_report_conversion('https://wa.me/525636140438')">
-                    <i class="fab fa-whatsapp" style="margin-right:6px;"></i> Hablar por WhatsApp
-                    </a>
+                    <!-- TODO: Reemplazar con datos reales de Doctoralia -->
+                    <div class="psic-hero__social-proof">
+                        <div class="psic-hero__social-left">
+                            <i class="fas fa-user-circle psic-hero__social-icon" aria-hidden="true"></i>
+                            <span class="psic-hero__social-label">Opiniones de pacientes</span>
+                        </div>
+                        <div class="psic-hero__social-right">
+                            <div class="psic-hero__social-header">
+                                <span class="psic-hero__social-stars" aria-hidden="true">★★★★★</span>
+                                <span class="psic-hero__social-count">N opiniones en Doctoralia</span>
+                            </div>
+                            <p class="psic-hero__social-quote">"Actualizar con cita real de paciente."</p>
+                        </div>
                     </div>
                 </div>
+
+                <aside class="psic-hero__agenda" aria-label="Agenda una sesión con Sarai Camarillo">
+                    <!-- TODO: Reemplazar con el widget individual de Doctoralia de Sarai -->
+                    <a id="zl-url" class="zl-url" href="https://www.doctoralia.com.mx/joanna-sarai-camarillo-morales/psicologo/cuauhtemoc2" rel="nofollow" data-zlw-doctor="joanna-sarai-camarillo-morales" data-zlw-type="big_with_calendar" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true" data-zlw-a11y-title="Widget de reserva de citas médicas">Reserve una cita</a>
+                    <script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>
+                </aside>
 
             </div>
         </section>
@@ -154,37 +173,37 @@
 
                 <div class="psic-bloque">
                     <div class="psic-bloque__icono">
-                    <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>Formación</h3>
                     <ul>
-                    <li>Licenciatura en psicología: UNAM – FES Iztacala</li>
-                    <li>Diplomado en Terapia Cognitivo Conductual: UNAM – FES Iztacala</li>
-                    <li>Diplomado en Terapia Cognitivo Conductual en niños y adolescentes: Instituto Universitario Solher del Cabo</li>
-                    <li>Terapia Médica Familiar en la Institución Hospitalaria: Hospital General de México</li>
+                        <li>Licenciatura en psicología: UNAM – FES Iztacala</li>
+                        <li>Diplomado en Terapia Cognitivo Conductual: UNAM – FES Iztacala</li>
+                        <li>Diplomado en Terapia Cognitivo Conductual en niños y adolescentes: Instituto Universitario Solher del Cabo</li>
+                        <li>Terapia Médica Familiar en la Institución Hospitalaria: Hospital General de México</li>
                     </ul>
                 </div>
 
                 <div class="psic-bloque">
                     <div class="psic-bloque__icono">
-                    <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-briefcase"></i>
                     </div>
                     <h3>Experiencia</h3>
                     <ul>
-                    <li>Más de 5 años brindando psicoterapia individual, infantil y con adolescentes</li>
-                    <li>Estrategia Psicológica de Atención Cognitivo Conductual (EPACC)</li>
-                    <li>Atención Psicológica de Primera Orientación y Ayuda (APPOYA)</li>
-                    <li>Estrategia para la Promoción de la Salud Mental y Vida Saludable</li>
+                        <li>Más de 5 años brindando psicoterapia individual, infantil y con adolescentes</li>
+                        <li>Estrategia Psicológica de Atención Cognitivo Conductual (EPACC)</li>
+                        <li>Atención Psicológica de Primera Orientación y Ayuda (APPOYA)</li>
+                        <li>Estrategia para la Promoción de la Salud Mental y Vida Saludable</li>
                     </ul>
                 </div>
 
                 <div class="psic-bloque">
                     <div class="psic-bloque__icono">
-                    <i class="fas fa-book-open"></i>
+                        <i class="fas fa-book-open"></i>
                     </div>
                     <h3>Publicaciones</h3>
                     <ul>
-                    <li><em>Procrastinación y estrés académico en universitarios de educación en línea</em> — Artículo académico</li>
+                        <li><em>Procrastinación y estrés académico en universitarios de educación en línea</em> — Artículo académico</li>
                     </ul>
                 </div>
 

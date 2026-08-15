@@ -100,21 +100,39 @@
     <!-- SECCIÓN PRINCIPAL DE CONTACTO — DOS COLUMNAS -->
     <section class="contacto-principal">
         <div class="contacto-principal__info">
-            <div class="contacto-intro">
-                <p>Sabemos que dar el primer paso no siempre es fácil.<br>Estamos aquí para acompañarte.</p>
-            </div>
+            <article class="contacto-card">
+                <div class="contacto-card__contenido">
+                    <div class="contacto-card__mensaje">
+                        <p>
+                            Sabemos que dar el primer paso no siempre es fácil.
+                            <strong>Estamos aquí para acompañarte.</strong>
+                        </p>
+                    </div>
 
-            <div class="contacto-cta">
-                <a class="btn-whatsapp"
-                   href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión"
-                   target="_blank"
-                   onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
-                    <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
-                </a>
-                <p class="contacto-tel">📞 +52 56 3614 0438 &nbsp;·&nbsp; Horario: 9 am – 10 pm</p>
-            </div>
+                    <a class="btn-whatsapp contacto-card__boton"
+                    href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        Escríbenos por WhatsApp
+                    </a>
+                </div>
 
-            <hr class="contacto-divider">
+                <div class="contacto-card__datos">
+                    <div class="contacto-card__dato">
+                        <span class="contacto-card__etiqueta">Teléfono</span>
+                        <a href="tel:+525636140438">56 3614 0438</a>
+                    </div>
+
+                    <span class="contacto-card__separador" aria-hidden="true"></span>
+
+                    <div class="contacto-card__dato contacto-card__dato--derecha">
+                        <span class="contacto-card__etiqueta">Horario</span>
+                        <span>9 am – 10 pm</span>
+                    </div>
+                </div>
+            </article>
         </div>
 
         <div class="contacto-principal__widget">
@@ -146,6 +164,8 @@
         </iframe>
     </div>
 
+
+    
 </main>
 
     <!-- FOOTER -->
