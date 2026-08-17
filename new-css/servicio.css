@@ -63,7 +63,7 @@
 
 .head-servicio--infantil {
     background:
-        linear-gradient(rgba(0, 143, 168, 0.321), rgba(0, 143, 168, 0.143)),
+        linear-gradient(rgba(0, 143, 168, 0.255), rgba(0, 143, 168, 0.117)),
         url("../img/H-infantil.jpg");
     background-size: cover;
     background-position: center 65%;
