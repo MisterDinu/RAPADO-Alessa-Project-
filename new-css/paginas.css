@@ -29,7 +29,7 @@
             rgba(19, 81, 153, 0.575),
             rgba(51, 124, 187, 0.267)
         ),
-        url("../img/preguntas-f.jpeg");
+        url("../img/H-varios.jpeg");
     background-size: cover;
     background-position: center 35%;
     background-repeat: no-repeat;
@@ -39,10 +39,10 @@
     background:
         linear-gradient(
             to right,
-            rgba(44, 48, 109, 0.685),
-            rgba(43, 40, 73, 0.24)
+            rgba(19, 81, 153, 0.575),
+            rgba(51, 124, 187, 0.267)
         ),
-        url("../img/contacto-f.jpg");
+        url("../img/H-varios.jpeg");
     background-size: cover;
     background-position: center 75%;
     background-repeat: no-repeat;
