@@ -8,18 +8,6 @@
         gtag('js', new Date());
         gtag('config', 'AW-10974720556');
     </script>
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof(url) != 'undefined') { window.location = url; }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-10974720556/N5flCKPezo4ZEKzkk_Eo',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,13 +38,13 @@
                 <li class="nav__item"><a class="nav__link" href="index.html">Inicio</a></li>
                 <li class="nav__item nav__item--dropdown">
                     <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-                        Servicios <i class="fas fa-chevron-down nav__chevron" aria-hidden="true"></i>
+                    Servicios <i class="fas fa-chevron-down nav__chevron" aria-hidden="true"></i>
                     </button>
                     <ul class="nav__dropdown" role="list">
-                        <li><a class="nav__dropdown-link" href="servicio/terapia-individual.html">Terapia Individual</a></li>
-                        <li><a class="nav__dropdown-link" href="servicio/terapia-pareja.html">Terapia de Pareja</a></li>
-                        <li><a class="nav__dropdown-link" href="servicio/terapia-infantil.html">Terapia Infantil y para Adolescentes</a></li>
-                        <li><a class="nav__dropdown-link" href="servicio/terapia-online.html">Terapia Online</a></li>
+                    <li><a class="nav__dropdown-link" href="servicio/terapia-individual.html">Terapia Individual</a></li>
+                    <li><a class="nav__dropdown-link" href="servicio/terapia-pareja.html">Terapia de Pareja</a></li>
+                    <li><a class="nav__dropdown-link" href="servicio/terapia-infantil.html">Terapia Infantil y para Adolescentes</a></li>
+                    <li><a class="nav__dropdown-link" href="servicio/terapia-online.html">Terapia Online</a></li>
                     </ul>
                 </li>
                 <li class="nav__item"><a class="nav__link" href="index.html#equipo">Psicólogos</a></li>
@@ -64,10 +52,10 @@
                 <li class="nav__item"><a class="nav__link" href="contacto.html">Contacto</a></li>
                 <li class="nav__item nav__item--cta">
                     <a class="nav__cta"
-                       href="https://www.doctoralia.com.mx/clinicas/centro-de-atencion-psicologica-alessa"
-                       target="_blank" rel="nofollow noopener noreferrer"
-                       aria-label="Agendar cita en Doctoralia">
-                        Agendar
+                    href="https://www.doctoralia.com.mx/clinicas/centro-de-atencion-psicologica-alessa"
+                    target="_blank" rel="nofollow noopener noreferrer"
+                    aria-label="Agendar cita en Doctoralia">
+                    Agendar
                     </a>
                 </li>
             </ul>
@@ -87,12 +75,14 @@
     <main>
 
         <!-- Botón flotante WhatsApp -->
-        <button id="btnSeguimiento" class="fadeIn">
-            <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0"
-               onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
-                <img src="img/Whats logo.png" alt="WhatsApp">
-            </a>
-        </button>
+        <a id="btnSeguimiento" class="fadeIn"
+        href="https://wa.me/525636140438?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="gtag_report_conversion('https://wa.me/525636140438?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n')"
+        aria-label="Contactar por WhatsApp">
+            <img src="img/Whats logo.png" alt="WhatsApp">
+        </a>
         <button id="btnArriba" class="fadeIn" onclick="volverArriba()">
             <img src="img/volver 2.png" alt="Volver arriba">
         </button>
@@ -103,87 +93,87 @@
 
                 <div class="acordeon-item">
                     <button class="acordeon-btn" aria-expanded="false">
-                        ¿Cómo sé si necesito terapia?
-                        <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
+                    ¿Cómo sé si necesito terapia?
+                    <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
                     </button>
                     <div class="acordeon-contenido">
-                        <p>Algunas señales comunes incluyen sentimientos persistentes de malestar emocional, dificultades en las relaciones, cambios en el rendimiento académico o laboral, alteraciones en el sueño o la alimentación, pérdida de interés en actividades placenteras y pensamientos negativos recurrentes. Si experimentas alguna de estas situaciones, puede ser un paso valioso contactarnos.</p>
+                    <p>Algunas señales comunes incluyen sentimientos persistentes de malestar emocional, dificultades en las relaciones, cambios en el rendimiento académico o laboral, alteraciones en el sueño o la alimentación, pérdida de interés en actividades placenteras y pensamientos negativos recurrentes. Si experimentas alguna de estas situaciones, puede ser un paso valioso contactarnos.</p>
                     </div>
                 </div>
 
                 <div class="acordeon-item">
                     <button class="acordeon-btn" aria-expanded="false">
-                        ¿Cuánto dura el proceso terapéutico?
-                        <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
+                    ¿Cuánto dura el proceso terapéutico?
+                    <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
                     </button>
                     <div class="acordeon-contenido">
-                        <p>Cada proceso es distinto, por lo que no existe un tiempo definido. Sin embargo, trabajamos para que percibas sus beneficios a corto plazo.</p>
+                    <p>Cada proceso es distinto, por lo que no existe un tiempo definido. Sin embargo, trabajamos para que percibas sus beneficios a corto plazo.</p>
                     </div>
                 </div>
 
                 <div class="acordeon-item">
                     <button class="acordeon-btn" aria-expanded="false">
-                        ¿En qué consiste la terapia?
-                        <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
+                    ¿En qué consiste la terapia?
+                    <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
                     </button>
                     <div class="acordeon-contenido">
-                        <ol>
-                            <li>Evaluamos y definimos de manera conjunta la situación problema.</li>
-                            <li>Analizamos y explicamos el ¿por qué?</li>
-                            <li>Buscamos y elegimos soluciones en términos de efectos a corto, mediano y largo plazo.</li>
-                            <li>Diseñamos un plan de intervención adaptado a tus necesidades.</li>
-                            <li>Iniciamos una etapa de seguimiento, monitoreando la persistencia de los cambios para decidir el alta terapéutica.</li>
-                        </ol>
+                    <ol>
+                    <li>Evaluamos y definimos de manera conjunta la situación problema.</li>
+                    <li>Analizamos y explicamos el ¿por qué?</li>
+                    <li>Buscamos y elegimos soluciones en términos de efectos a corto, mediano y largo plazo.</li>
+                    <li>Diseñamos un plan de intervención adaptado a tus necesidades.</li>
+                    <li>Iniciamos una etapa de seguimiento, monitoreando la persistencia de los cambios para decidir el alta terapéutica.</li>
+                    </ol>
                     </div>
                 </div>
 
                 <div class="acordeon-item">
                     <button class="acordeon-btn" aria-expanded="false">
-                        ¿Cada cuándo se toman las sesiones?
-                        <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
+                    ¿Cada cuándo se toman las sesiones?
+                    <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
                     </button>
                     <div class="acordeon-contenido">
-                        <p>Lo habitual es una sesión semanal.</p>
+                    <p>Lo habitual es una sesión semanal.</p>
                     </div>
                 </div>
 
                 <div class="acordeon-item">
                     <button class="acordeon-btn" aria-expanded="false">
-                        ¿Cuánto dura cada sesión?
-                        <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
+                    ¿Cuánto dura cada sesión?
+                    <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
                     </button>
                     <div class="acordeon-contenido">
-                        <p>Cada sesión tiene una duración aproximada de 50 minutos.</p>
+                    <p>Cada sesión tiene una duración aproximada de 50 minutos.</p>
                     </div>
                 </div>
 
                 <div class="acordeon-item">
                     <button class="acordeon-btn" aria-expanded="false">
-                        ¿Cuáles son los horarios de atención?
-                        <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
+                    ¿Cuáles son los horarios de atención?
+                    <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
                     </button>
                     <div class="acordeon-contenido">
-                        <p>Lunes a Viernes de 9 am a 9 pm. Sábados de 8 am a 5 pm.</p>
+                    <p>Lunes a Viernes de 9 am a 9 pm. Sábados de 8 am a 5 pm.</p>
                     </div>
                 </div>
 
                 <div class="acordeon-item">
                     <button class="acordeon-btn" aria-expanded="false">
-                        ¿Cuál es el costo por sesión?
-                        <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
+                    ¿Cuál es el costo por sesión?
+                    <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
                     </button>
                     <div class="acordeon-contenido">
-                        <p>El costo por sesión es de <strong>$700 MXN</strong>.</p>
+                    <p>El costo por sesión es de <strong>$700 MXN</strong>.</p>
                     </div>
                 </div>
 
                 <div class="acordeon-item">
                     <button class="acordeon-btn" aria-expanded="false">
-                        ¿Dónde se encuentran ubicados?
-                        <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
+                    ¿Dónde se encuentran ubicados?
+                    <i class="fas fa-chevron-down acordeon-icono" aria-hidden="true"></i>
                     </button>
                     <div class="acordeon-contenido">
-                        <p>Tabasco 56, Int. 4, Colonia Roma Norte, Delegación Cuauhtémoc, CDMX.</p>
+                    <p>Tabasco 56, Int. 4, Colonia Roma Norte, Delegación Cuauhtémoc, CDMX.</p>
                     </div>
                 </div>
 

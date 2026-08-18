@@ -9,22 +9,6 @@
         gtag('js', new Date());
         gtag('config', 'AW-10974720556');
     </script>
-
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof(url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-10974720556/N5flCKPezo4ZEKzkk_Eo',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,12 +91,10 @@
 
     <main class="main--individual">
         <!-- Botones flotantes -->
-        <button id="btnSeguimiento" class="fadeIn">
-            <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0"
-            onclick="gtag_report_conversion('https://wa.me/525636140438')">
-                <img src="../img/Whats logo.png" alt="WhatsApp">
-            </a>
-        </button>
+        <a id="btnSeguimiento" class="fadeIn" href="https://wa.me/525636140438?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n" 
+        target="_blank" rel="noopener noreferrer" onclick="gtag_report_conversion('https://wa.me/525636140438?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n')" aria-label="Contactar por WhatsApp">
+            <img src="../img/Whats logo.png" alt="WhatsApp">
+        </a>
         <button id="btnArriba" class="fadeIn" onclick="volverArriba()">
             <img src="../img/volver 2.png" alt="Volver arriba">
         </button>
@@ -132,10 +114,12 @@
                     rel="nofollow noopener noreferrer">
                     <button class="submit-on">Agenda en Doctoralia</button>
                     </a>
-                    <a class="cta-link"
-                    href="https://wa.me/525636140438?text=Hola,%20me%20gustaría%20información%20sobre%20terapia%20infantil"
-                    onclick="gtag_report_conversion('https://wa.me/525636140438')">
-                    <button class="submit-on submit-on--secondary">Resolver dudas por WhatsApp</button>
+                    <a class="cta-link submit-on submit-on--secondary"
+                    href="https://wa.me/525636140438?text=Hola,%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20terapia%20individual"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onclick="gtag_report_conversion('https://wa.me/525636140438?text=Hola,%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20terapia%20individual')">
+                    Resolver dudas por WhatsApp
                     </a>
                     </div>
                 </div>
@@ -257,9 +241,12 @@
                 target="_blank" rel="nofollow noopener noreferrer">
                     <button class="submit-on">Agendar en Doctoralia</button>
                 </a>
-                <a href="https://wa.me/525636140438?text=Hola,%20me%20gustaría%20agendar%20una%20sesión%20de%20terapia%20individual"
-                onclick="gtag_report_conversion('https://wa.me/525636140438?text=Hola,%20me%20gustaría%20agendar%20una%20sesión%20de%20terapia%20individual')">
-                    <button class="submit-on submit-on--secondary">Hablar por WhatsApp</button>
+                <a class="submit-on submit-on--secondary"
+                href="https://wa.me/525636140438?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20de%20terapia%20individual"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="gtag_report_conversion('https://wa.me/525636140438?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20de%20terapia%20individual')">
+                Resolver dudas por WhatsApp
                 </a>
             </div>
         </section>

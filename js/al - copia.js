@@ -54,51 +54,26 @@ function mostrarModal(idModal) {
   }
 
 
-// CONVERSIÓN DE WHATSAPP — centralizada para todo el sitio
+// FOR THE NS PASOS SECTION, TEXT BOX APPEARS WHEN SCROLLING
 
-function gtag_report_conversion(url) {
-    if (typeof url === 'undefined' || !url) {
-        return false;
+document.addEventListener('scroll', reveal)
+
+function reveal(){
+    var reveals = document.querySelectorAll('.paso');
+    for(var i = 0; i < reveals.length; i++){
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 200;
+
+        if(revealTop < windowHeight - revealPoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
     }
-
-    // Abre WhatsApp inmediatamente en respuesta directa al clic.
-    // Esto evita que el navegador bloquee la ventana como pop-up.
-    var win = window.open(url, '_blank');
-
-    // Si el pop-up fue bloqueado, recurre a navegación normal.
-    if (!win || win.closed || typeof win.closed === 'undefined') {
-        window.location.href = url;
-    }
-
-    // Envía la conversión a Google Ads en paralelo.
-    gtag('event', 'conversion', {
-        'send_to': 'AW-10974720556/N5flCKPezo4ZEKzkk_Eo',
-        'event_timeout': 2000
-    });
-
-    return false;
 }
 
-// CONVERSIÓN DE DOCTORALIA — clics hacia Doctoralia
-
-function gtag_report_doctoralia() {
-    gtag('event', 'conversion', {
-        'send_to': 'AW-10974720556/G_FnCNa-geQcEKzkk_Eo',
-        'event_timeout': 2000
-    });
-
-    return true;
-}
-
-// DETECCIÓN CENTRALIZADA DE CLICS HACIA DOCTORALIA
-
-document.addEventListener('click', function (event) {
-    var enlace = event.target.closest('a[href*="doctoralia.com.mx"]');
-
-    if (enlace) {
-        gtag_report_doctoralia();
-    }
-});
 
 // PARA ERROR DE TARGET BLANK EN BOTÓN DE WHATSAPP
 

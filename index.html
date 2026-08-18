@@ -8,19 +8,6 @@
         gtag('js', new Date());
         gtag('config', 'AW-10974720556');
     </script>
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof(url) != 'undefined') { window.location = url; }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-10974720556/N5flCKPezo4ZEKzkk_Eo',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicólogos en CDMX | Terapia Individual, Pareja e Infantil · Centro Alessa</title>
@@ -110,8 +97,9 @@
                class="hero-card__btn hero-card__btn--primary">
                 Agendar por Doctoralia
             </a>
-            <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0"
-               onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')"
+            <a href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión"
+               target="_blank" rel="noopener noreferrer"
+               onclick="return gtag_report_conversion(this.href);"
                class="hero-card__btn hero-card__btn--secondary">
                 WhatsApp
             </a>
@@ -124,12 +112,12 @@
     </button>
 
     <!-- Botón WhatsApp flotante -->
-    <button id="btnSeguimiento" class="fadeIn">
-        <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0"
-           onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
-            <img src="img/Whats logo.png" alt="WhatsApp">
-        </a>
-    </button>
+    <a id="btnSeguimiento" class="fadeIn"
+       href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión"
+       target="_blank" rel="noopener noreferrer"
+       onclick="return gtag_report_conversion(this.href);">
+        <img src="img/Whats logo.png" alt="WhatsApp">
+    </a>
 
     <!-- ====  SERVICIOS ==== -->
     <section class="servicios section" aria-labelledby="servicios-titulo">
@@ -168,7 +156,7 @@
         </article>
 
         <article class="servicio-item">
-            <img src="img/U15.jpg"
+            <img src="img/U20.jpeg"
                  alt="Terapia infantil en Roma Norte, acompañamiento a padres y tutores"
                  class="servicio-item__img" loading="lazy">
             <div class="servicio-item__texto">
@@ -263,64 +251,64 @@
 
                 <div class="psicologo">
                     <a href="equipo/Cesar.html" class="imagen-port-link" aria-label="Ver perfil de César Tapia">
-                        <div class="imagen-port">
-                            <img src="img/PsicC.jpg" alt="César Tapia, psicólogo en Centro Alessa" loading="lazy">
-                            <div class="hover-galeria">
-                                <p class="hover-galeria__areas">Individual · Pareja<br>Infantil · Adolescentes</p>
-                                <p class="hover-galeria__modalidad">
-                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presencial
-                                </p>
-                                <span class="hover-galeria__cta">Ver perfil →</span>
-                            </div>
-                        </div>
+                    <div class="imagen-port">
+                    <img src="img/PsicC.jpg" alt="César Tapia, psicólogo en Centro Alessa" loading="lazy">
+                    <div class="hover-galeria">
+                    <p class="hover-galeria__areas">Individual · Pareja<br>Infantil · Adolescentes</p>
+                    <p class="hover-galeria__modalidad">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presencial
+                    </p>
+                    <span class="hover-galeria__cta">Ver perfil →</span>
+                    </div>
+                    </div>
                     </a>
                     <h3 class="nombre">César Tapia</h3>
                 </div>
 
                 <div class="psicologo">
                     <a href="equipo/Sarai.html" class="imagen-port-link" aria-label="Ver perfil de Sarai Camarillo">
-                        <div class="imagen-port">
-                            <img src="img/PsicS.jpg" alt="Sarai Camarillo, psicóloga en Centro Alessa" loading="lazy">
-                            <div class="hover-galeria">
-                                <p class="hover-galeria__areas">Individual · Infantil<br>Adolescentes</p>
-                                <p class="hover-galeria__modalidad">
-                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presencial
-                                </p>
-                                <span class="hover-galeria__cta">Ver perfil →</span>
-                            </div>
-                        </div>
+                    <div class="imagen-port">
+                    <img src="img/PsicS.jpg" alt="Sarai Camarillo, psicóloga en Centro Alessa" loading="lazy">
+                    <div class="hover-galeria">
+                    <p class="hover-galeria__areas">Individual · Infantil<br>Adolescentes</p>
+                    <p class="hover-galeria__modalidad">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presencial
+                    </p>
+                    <span class="hover-galeria__cta">Ver perfil →</span>
+                    </div>
+                    </div>
                     </a>
                     <h3 class="nombre">Sarai Camarillo</h3>
                 </div>
 
                 <div class="psicologo">
                     <a href="equipo/Jaime.html" class="imagen-port-link" aria-label="Ver perfil de Jaime Bravo">
-                        <div class="imagen-port">
-                            <img src="img/PsicJ.jpg" alt="Jaime Bravo, psicólogo en Centro Alessa" loading="lazy">
-                            <div class="hover-galeria">
-                                <p class="hover-galeria__areas">Individual · Pareja<br>Adolescentes</p>
-                                <p class="hover-galeria__modalidad">
-                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presencial
-                                </p>
-                                <span class="hover-galeria__cta">Ver perfil →</span>
-                            </div>
-                        </div>
+                    <div class="imagen-port">
+                    <img src="img/PsicJ.jpg" alt="Jaime Bravo, psicólogo en Centro Alessa" loading="lazy">
+                    <div class="hover-galeria">
+                    <p class="hover-galeria__areas">Individual · Pareja<br>Adolescentes</p>
+                    <p class="hover-galeria__modalidad">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Presencial
+                    </p>
+                    <span class="hover-galeria__cta">Ver perfil →</span>
+                    </div>
+                    </div>
                     </a>
                     <h3 class="nombre">Jaime Bravo</h3>
                 </div>
 
                 <div class="psicologo">
                     <a href="equipo/Victor.html" class="imagen-port-link" aria-label="Ver perfil de Victor Huertas">
-                        <div class="imagen-port">
-                            <img src="img/PsicV.jpg" alt="Victor Huertas, psicólogo en Centro Alessa" loading="lazy">
-                            <div class="hover-galeria">
-                                <p class="hover-galeria__areas">Individual · Pareja<br>Adolescentes</p>
-                                <p class="hover-galeria__modalidad">
-                                    <i class="fa-solid fa-video" aria-hidden="true"></i> En línea
-                                </p>
-                                <span class="hover-galeria__cta">Ver perfil →</span>
-                            </div>
-                        </div>
+                    <div class="imagen-port">
+                    <img src="img/PsicV.jpg" alt="Victor Huertas, psicólogo en Centro Alessa" loading="lazy">
+                    <div class="hover-galeria">
+                    <p class="hover-galeria__areas">Individual · Pareja<br>Adolescentes</p>
+                    <p class="hover-galeria__modalidad">
+                    <i class="fa-solid fa-video" aria-hidden="true"></i> En línea
+                    </p>
+                    <span class="hover-galeria__cta">Ver perfil →</span>
+                    </div>
+                    </div>
                     </a>
                     <h3 class="nombre">Victor Huertas</h3>
                 </div>

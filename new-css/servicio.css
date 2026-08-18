@@ -48,9 +48,9 @@
     background:
         linear-gradient(rgba(34, 114, 211, 0.458),
         rgba(38, 60, 70, 0.233)),
-        url("../img/H-online.jpg");
+        url("../img/H-online.jpeg");
     background-size: cover;
-    background-position: center 35%;
+    background-position: center 65%;
 }
 
 .head-servicio--pareja {
